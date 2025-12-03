@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="watermarked-e703c634-0ef2-486e-a8ab-e631b966b82a-removebg-preview.png" alt="logo"></a>
+      </header>
+    
+    
+      <div class="container">
+        <div class="select">
+          <div class="form-cbc">
+            <i class="fas fa-user-plus"></i>
+            <h3>Cadastre-se</h3>
+          </div>
+    
+          <form id="cadastroForm" onsubmit="enviarInformaçoes(event)">
+    
+            
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+    
+            
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" min="12" max="120" required placeholder="Sua idade">
+
+            <label for="idade">Altura</label>
+            <input type="number" id="altura" name="altura"  required placeholder="Sua altura em cm">
+
+            <label for="idade">Peso</label>
+            <input type="number" id="peso" name="peso"  required placeholder="Seu peso">
+    
+            
+            <label>Qual seu principal objetivo?</label>
+            <div class="select-itens1">
+              <div class="button" data-value="emagrecer">Emagrecer</div>
+              <div class="button" data-value="ganhar-massa">Ganhar massa muscular</div>
+              <div class="button" data-value="saude">Saúde e bem-estar</div>
+              <div class="button" data-value="definicao">Definição muscular</div>
+            </div>
+            <input type="hidden" name="objetivo" id="objetivo">
+    
+            
+            <label>Sexo</label>
+            <div class="select-itens2">
+              <div class="button" data-value="masculino">
+                <i class="fas fa-mars"></i><br>Masculino
+              </div>
+              <div class="button" data-value="feminino">
+                <i class="fas fa-venus"></i><br>Feminino
+              </div>
+            </div>
+            <input type="hidden" name="sexo" id="sexo">
+    
+            <button type="submit" id="enviar" onclick="enviarInformaçoes()">Enviar Cadastro</button>
+          </form>
+        </div>
+      </div>
+    
+      
+    
+
+     <script src="cadastro.js"></script>
+</body>
+</html>

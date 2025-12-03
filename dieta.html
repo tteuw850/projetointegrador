@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sua Refeição do Dia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="dieta.css">
+  
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="watermarked-e703c634-0ef2-486e-a8ab-e631b966b82a-removebg-preview.png" alt="logo"></a>
+  </header>
+
+<div class="container">
+  <h1>Sua Refeição do Dia</h1>
+  <p class="subtitle">Tudo pronto! Aqui está seu cardápio completo.</p>
+
+  <section class="infos">
+    <ul id="cafe">
+      <li><strong class="h1"><i class="fa-solid fa-mug-hot"></i> Café da manhã</strong></li>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+    </ul>
+
+    <ul id="almoco">
+      <li><strong class="h1"><i class="fa-solid fa-bowl-food"></i> Almoço</strong></li>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+    </ul>
+
+    <ul id="lanche">
+      <li><strong class="h1"><i class="fa-solid fa-mug-hot"></i> Lanche da Tarde</strong></li>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+    </ul>
+
+    <ul id="jantar">
+      <li><strong class="h1"><i class="fa-solid fa-bowl-food"></i> Jantar</strong></li>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+      <div class="icone"><li><span class="slot">Carregando...</span></li></div>
+    </ul>
+  </section>
+
+  <button class="imprimir" onclick="window.print()">Imprimir Refeição</button>
+  <button class="estatísticas" onclick="mostraEst()">Mostrar estatísticas</button>
+  <a href="cadastro.html" class="voltar">Criar novo cadastro</a>
+</div>
+
+<aside id="back-to-top-button" class="back-to-top">
+  <i class="fa-solid fa-chevron-up"></i>
+</aside>
+
+<script src="dieta.js"></script>
+
+</body>
+</html>

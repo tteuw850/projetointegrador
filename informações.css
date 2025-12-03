@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px clamp(20px, 5vw, 300px); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-sizing: border-box; 
+    transition: padding 0.3s ease; 
+  
+    & img {
+      width: clamp(60px, 12vw, 100px); 
+      height: auto;
+      background-color: green;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      object-fit: contain;
+      transition: width 0.3s ease;
+    }
+
+}
+
+body {
+    padding: 20px;
+    color: black;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 20vh;
+    }
+    
+    
+    .container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    
+    .section {
+    margin-bottom: 25px;
+    }
+    
+    
+    h2 {
+    color: #2e8b57;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    }
+    
+    
+    .info-box, .macros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+    }
+    
+    
+    .card {
+    background: #f0fff0;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cceccc;
+    text-align: center;
+    font-size: 1rem;
+    }
+    
+    
+    .macro-card {
+    background: #ffffff;
+    border: 2px solid green;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: green;
+    }
+    
+    
+    
+    @media (max-width: 480px) {
+    header {
+    font-size: 1.4rem;
+    padding: 15px;
+    }
+    
+    
+    h2 {
+    font-size: 1.2rem;
+    }
+    
+    
+    .card, .macro-card {
+    font-size: 0.95rem;
+    padding: 12px;
+    }
+    }

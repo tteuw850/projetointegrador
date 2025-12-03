@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriAI-IMC</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="watermarked-e703c634-0ef2-486e-a8ab-e631b966b82a-removebg-preview.png" alt="logo"></a>
+        <nav class="navigator">
+            <a href="index.html">Home</a>
+            <a href="index2.html">Gerar Dietas</a>
+            <a href="#">Auxilio IA</a>
+            <a href="#">Exercícios</a>
+
+        </nav>
+    </header>
+    <main class="cnn" id="conteiner">
+        <section class="sec1" id="titlePrincipal">
+            <h1>Calcule seu IMC (Índice de Massa Corporal) <br> para criarmos uma dieta para sua necessidade.</h1>
+        </section>
+        <section class="sec2" id="divPrincipal">
+            <div id="img" class="sec2-1">
+                <img src="watermarked-7e87186f-d52d-441f-8f41-ba0f13b7cd06-removebg-preview.png" alt="">
+            </div>
+            <div class="calculator">
+                <form class="Calculadora" id="form">
+                    <h1 id="title">
+                        Calculadora - IMC
+                    </h1>
+                    <div class="imput-box">
+                        <label for="weight">
+                            Peso em kg
+                        </label>
+                        <div class="imput-field">
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <input type="number" id="weight" required>
+                            <span>Kg</span>
+                        </div>
+                    </div>
+                    <div class="imput-box">
+                        <label for="height">
+                            Altura em metros
+                        </label>
+                        <div class="imput-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="height" step="0.01" lang="en" required>
+                            <span>M</span>
+                        </div>
+                    </div>
+                    <button id="calculate">
+                        Calcular
+                    </button>
+                    <div id="infos" class="hidden">
+                        <div id="result">
+                            <div id="bmi">
+                                <span id="value"></span>
+                                <span>Seu IMC</span>
+                            </div>
+                            <div id="description">
+                                <span></span>
+        
+                            </div>
+                        </div>
+                        <div class="prx">
+                            <button onclick="substituirDiv()" class="prx1">Próximo</button>
+    
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            
+
+        </section>
+        
+        <script src="script.js"></script>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
